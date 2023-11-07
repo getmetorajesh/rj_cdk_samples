@@ -16,6 +16,7 @@ export class CdkDdbIncrementalExportStack extends cdk.Stack {
       autoDeleteObjects: true,
       versioned: false,
     });
+    console.log("placeholder");
 
     const tableToBeBacked = new Table(this, "ExportTable", {
       partitionKey: { name: "id", type: AttributeType.STRING },
